@@ -19,7 +19,6 @@ public class Main {
       System.out.println("5:Check Balance");
       System.out.println("6:Check Customer details");
       System.out.println("7:Change user Name");
-      System.out.println("8:Change Pin");
       System.out.println("9:Delete Account");
       System.out.println("10:Delete Customer");
 
@@ -59,8 +58,15 @@ public class Main {
               break;
 
           case 7: //Change userName
+              MakeChanges makeChanges=new MakeChanges(accountArrayList,customerArrayList);
+              makeChanges.changeUserName();
+              break;
 
+          case 9://Delete Account
+              
+              break;
 
+          case 10:  //Delete customer
               break;
 
           default:

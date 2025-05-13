@@ -11,11 +11,12 @@ public class MakeChanges {
        this.accounts=accounts;
    }
     void changeUserName(){
-        System.out.println("Enter the UserName");
-        String userName= scanner.next();
+        System.out.println("Enter the UserId");
+        String id= scanner.next();
 
         for(Customer customer:customers){
-            if(customer.getUserName().equals(userName)){
+            if(customer.getCustomerId().equals(id)){
+
                 System.out.println("Enter the Account number: ");
                 String accNumber= scanner.next();
 
@@ -26,12 +27,17 @@ public class MakeChanges {
                         if(account.getPassword().equals(pass)){
                             System.out.println("Enter the new user Name: ");
                             String newUserName= scanner.next();
-
+                            customer.setUserName(newUserName);
                         }
                     }
                 }
             }
         }
     }
+
+
+
+
+
 
 }

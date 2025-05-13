@@ -13,6 +13,7 @@ public class CheckDetails {
     }
 
     void checkBalance(){
+
         System.out.println("Enter the Account Number");
         String accNum=scanner.next();
 
@@ -31,7 +32,7 @@ public class CheckDetails {
     }
 
     void displayCustomerDetails() {
-        System.out.println("Enter the Customer ID: ");
+        ;System.out.println("Enter the Customer ID: ");
         String id = scanner.next();
 
         boolean found = false;
