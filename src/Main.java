@@ -63,12 +63,18 @@ public class Main {
               break;
 
           case 9://Delete Account
-              
+              DeleteOperations deleteOperations=new DeleteOperations(accountArrayList,customerArrayList);
+                deleteOperations.deleteAccount();
               break;
 
           case 10:  //Delete customer
+              DeleteOperations deleteOperations1=new DeleteOperations(accountArrayList,customerArrayList);
+              deleteOperations1.deleteCustomer();
               break;
 
+          case 11: //Print All Customer details
+                   PrintCustomer printCustomer=new PrintCustomer();
+                   printCustomer.printCustomer(customerArrayList);
           default:
               System.out.println("Invalid Input...!");
               break;

@@ -39,7 +39,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer details: " +
+        return "Customer: " +
                 "customerId='" + customerId + '\'' +
                 ", customerName='" + customerName + '\'' +
                 ", userName='" + userName + '\'' +
