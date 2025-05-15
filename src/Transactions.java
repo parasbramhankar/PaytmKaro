@@ -8,7 +8,7 @@ public class Transactions {
 
         System.out.println("Enter UserName: ");
         String userName=scanner.next();
-
+        scanner.nextLine();
         for(Customer customer:customerList){
             if(customer.getUserName().equals(userName)){
 

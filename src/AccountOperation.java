@@ -34,7 +34,7 @@ public class AccountOperation {
 
         account.setCustomerDetails(customer);
 
-        System.out.println("Enter Account for the user: ");
+        System.out.println("Enter Account Number for the user: ");
         String accountNumber= scanner.next();
         account.setAccountNumber(accountNumber);
 
